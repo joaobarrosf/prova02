@@ -1,0 +1,100 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+int main()
+{
+int tabuada = 0;
+printf("\nDigite a tabuada que você deseja \n\t\t\t\n>>> ");
+scanf("%i", &tabuada);
+
+for(int x = 1; x<=10; ++x){
+    //1 x 5 = 5
+    printf("%ix%i = %i\n", x, tabuada, x * tabuada);
+}
+
+return 0;
+}
+//
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+char string1[50], string2[50];
+int i, j = 0;
+gets(string1);
+for(i = (strlen(string1) - 1); i >= 0; i--) {
+string2[j] = string1[i];
+j++;
+}
+string2[j] = 0;
+printf("String invertida: %s\n", string2);
+return 0;
+}
+
+//
+
+
+
+#include<stdio.h>
+void main(){
+int x, y;
+printf("digite coordenadas X:\n");
+scanf("%d", &x);
+printf("digite coordenadas Y:\n");
+scanf("%d", &y);
+
+if (x>0 && y>0){
+printf("suas coordenadas %d e %d estão no primeiro quadrante", x, y);
+}
+if(x<0 && y>0){
+printf("suas coordenadas %d e %d estão no segundo quadrante", x, y);
+}
+if(x<0 && y<0){
+printf("suas coordenadas %d e %d estão no terceiro quadrante", x, y);
+}
+if(x>0 && y<0){
+printf("suas coordenadas %d e %d estão no quarto quadrante", x, y);
+}
+
+}
+
+//
+
+#include<stdio.h>
+void main() {
+int dia, mes, ano, bissexto;
+int diasvividos;
+printf("informe o ano que voce nasceu:\n");
+scanf("%d", &ano);
+printf("é ano bissexto?sim(1) ou não(2)\n");
+scanf("%d", &bissexto);
+printf("informe o mes que voce nasceu:\n");
+scanf("%d", &mes);
+printf("informe o dia que voce nasceu:\n");
+scanf("%d", &dia);
+if ( bissexto == 1){
+diasvividos=(2019-ano)365+mes30+dia+1;
+printf("voce já viveu %d dias", diasvividos);
+}
+else {
+diasvividos=(2019-ano)365+mes30+dia;
+printf("voce já viveu %d dias", diasvividos);
+}
+}
+
+//
+
+#include <stdio.h>
+void main() {
+int numero;
+printf("digite um numero:\n");
+scanf("%d", &numero);
+if(numero%2 == 0)
+printf("este numero é par\n");
+else {
+printf("este número é impar\n");
+}
+}
+
+//
